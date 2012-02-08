@@ -11,7 +11,7 @@ namespace EmailRequest.Test
     {
         static void Main(string[] args)
         {
-            ServiceBusiness.SelfStart();
+            ServiceBusiness.SelfStart(); 
             Console.ReadKey();
             //try
             //{
