@@ -13,7 +13,7 @@ namespace EmailScheduler.Client.Api
 {
     public class EmailRequest
     {
-        static IEmailRequest client = null;
+        static IEmailRequest client = null; 
         IEventParameter events = null;
         IEmailRequestResult parameter = null;
         public int RepeatCount
