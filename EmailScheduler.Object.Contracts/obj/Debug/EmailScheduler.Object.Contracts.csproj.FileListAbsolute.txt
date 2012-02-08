@@ -1,0 +1,10 @@
+D:\Vipul\Projects\PMPAxon\EmailScheduler\EmailScheduler\EmailScheduler.Object.Contracts\bin\Debug\EmailScheduler.Object.Contracts.dll
+D:\Vipul\Projects\PMPAxon\EmailScheduler\EmailScheduler\EmailScheduler.Object.Contracts\bin\Debug\EmailScheduler.Object.Contracts.pdb
+D:\Vipul\Projects\PMPAxon\EmailScheduler\EmailScheduler\EmailScheduler.Object.Contracts\obj\Debug\ResolveAssemblyReference.cache
+D:\Vipul\Projects\PMPAxon\EmailScheduler\EmailScheduler\EmailScheduler.Object.Contracts\obj\Debug\EmailScheduler.Object.Contracts.dll
+D:\Vipul\Projects\PMPAxon\EmailScheduler\EmailScheduler\EmailScheduler.Object.Contracts\obj\Debug\EmailScheduler.Object.Contracts.pdb
+D:\Vipul\Project R&D\EmailScheduler\EmailScheduler.Object.Contracts\bin\Debug\EmailScheduler.Object.Contracts.dll
+D:\Vipul\Project R&D\EmailScheduler\EmailScheduler.Object.Contracts\bin\Debug\EmailScheduler.Object.Contracts.pdb
+D:\Vipul\Project R&D\EmailScheduler\EmailScheduler.Object.Contracts\obj\Debug\ResolveAssemblyReference.cache
+D:\Vipul\Project R&D\EmailScheduler\EmailScheduler.Object.Contracts\obj\Debug\EmailScheduler.Object.Contracts.dll
+D:\Vipul\Project R&D\EmailScheduler\EmailScheduler.Object.Contracts\obj\Debug\EmailScheduler.Object.Contracts.pdb

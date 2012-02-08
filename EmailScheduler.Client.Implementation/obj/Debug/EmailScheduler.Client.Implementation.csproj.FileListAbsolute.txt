@@ -1,0 +1,9 @@
+D:\Vipul\Projects\PMPAxon\EmailScheduler\EmailScheduler\EmailScheduler.Client.Implementation\bin\Debug\EmailScheduler.Client.Implementation.dll
+D:\Vipul\Projects\PMPAxon\EmailScheduler\EmailScheduler\EmailScheduler.Client.Implementation\bin\Debug\EmailScheduler.Client.Implementation.pdb
+D:\Vipul\Projects\PMPAxon\EmailScheduler\EmailScheduler\EmailScheduler.Client.Implementation\obj\Debug\ResolveAssemblyReference.cache
+D:\Vipul\Projects\PMPAxon\EmailScheduler\EmailScheduler\EmailScheduler.Client.Implementation\obj\Debug\EmailScheduler.Client.Implementation.dll
+D:\Vipul\Projects\PMPAxon\EmailScheduler\EmailScheduler\EmailScheduler.Client.Implementation\obj\Debug\EmailScheduler.Client.Implementation.pdb
+D:\Vipul\Projects\PMPAxon\EmailScheduler\EmailScheduler\EmailScheduler.Client.Implementation\bin\Debug\EmailScheduler.Client.Contracts.dll
+D:\Vipul\Projects\PMPAxon\EmailScheduler\EmailScheduler\EmailScheduler.Client.Implementation\bin\Debug\EmailScheduler.Common.dll
+D:\Vipul\Projects\PMPAxon\EmailScheduler\EmailScheduler\EmailScheduler.Client.Implementation\bin\Debug\EmailScheduler.Client.Contracts.pdb
+D:\Vipul\Projects\PMPAxon\EmailScheduler\EmailScheduler\EmailScheduler.Client.Implementation\bin\Debug\EmailScheduler.Common.pdb

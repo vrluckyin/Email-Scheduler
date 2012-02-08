@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EmailRequestStoreContainer" CdmEntityContainer="EmailRequestEntities">
+    <FunctionImportMapping FunctionImportName="EmailRequest_Error" FunctionName="EmailRequest.Store.PMPAxon_EmailRequest_Error" />
+    <FunctionImportMapping FunctionImportName="EmailRequest_Success" FunctionName="EmailRequest.Store.PMPAxon_EmailRequest_Success" />
+    <FunctionImportMapping FunctionImportName="EmailRequest_Read_Daily" FunctionName="EmailRequest.Store.PMPAxon_EmailRequest_Read_Daily">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="EmailRequest.EmailRequestResult">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ToList" ColumnName="ToList" />
+          <ScalarProperty Name="EmailSubject" ColumnName="EmailSubject" />
+          <ScalarProperty Name="EmailBody" ColumnName="EmailBody" />
+          <ScalarProperty Name="EmailStatus" ColumnName="EmailStatus" />
+          <ScalarProperty Name="RequestedBy" ColumnName="RequestedBy" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+          <ScalarProperty Name="ScheduleUnitId" ColumnName="ScheduleUnitId" />
+          <ScalarProperty Name="ScheduleOn" ColumnName="ScheduleOn" />
+          <ScalarProperty Name="AttachmentList" ColumnName="AttachmentList" />
+          <ScalarProperty Name="TrialCount" ColumnName="TrialCount" />
+          <ScalarProperty Name="RepeatCount" ColumnName="RepeatCount" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="EmailRequest_Read_Date" FunctionName="EmailRequest.Store.PMPAxon_EmailRequest_Read_Date">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="EmailRequest.EmailRequestResult">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ToList" ColumnName="ToList" />
+          <ScalarProperty Name="EmailSubject" ColumnName="EmailSubject" />
+          <ScalarProperty Name="EmailBody" ColumnName="EmailBody" />
+          <ScalarProperty Name="EmailStatus" ColumnName="EmailStatus" />
+          <ScalarProperty Name="RequestedBy" ColumnName="RequestedBy" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+          <ScalarProperty Name="ScheduleUnitId" ColumnName="ScheduleUnitId" />
+          <ScalarProperty Name="ScheduleOn" ColumnName="ScheduleOn" />
+          <ScalarProperty Name="AttachmentList" ColumnName="AttachmentList" />
+          <ScalarProperty Name="TrialCount" ColumnName="TrialCount" />
+          <ScalarProperty Name="RepeatCount" ColumnName="RepeatCount" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="EmailRequest_Read_Hourly" FunctionName="EmailRequest.Store.PMPAxon_EmailRequest_Read_Hourly">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="EmailRequest.EmailRequestResult">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ToList" ColumnName="ToList" />
+          <ScalarProperty Name="EmailSubject" ColumnName="EmailSubject" />
+          <ScalarProperty Name="EmailBody" ColumnName="EmailBody" />
+          <ScalarProperty Name="EmailStatus" ColumnName="EmailStatus" />
+          <ScalarProperty Name="RequestedBy" ColumnName="RequestedBy" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+          <ScalarProperty Name="ScheduleUnitId" ColumnName="ScheduleUnitId" />
+          <ScalarProperty Name="ScheduleOn" ColumnName="ScheduleOn" />
+          <ScalarProperty Name="AttachmentList" ColumnName="AttachmentList" />
+          <ScalarProperty Name="TrialCount" ColumnName="TrialCount" />
+          <ScalarProperty Name="RepeatCount" ColumnName="RepeatCount" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="EmailRequest_Read_Monthly" FunctionName="EmailRequest.Store.PMPAxon_EmailRequest_Read_Monthly">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="EmailRequest.EmailRequestResult">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ToList" ColumnName="ToList" />
+          <ScalarProperty Name="EmailSubject" ColumnName="EmailSubject" />
+          <ScalarProperty Name="EmailBody" ColumnName="EmailBody" />
+          <ScalarProperty Name="EmailStatus" ColumnName="EmailStatus" />
+          <ScalarProperty Name="RequestedBy" ColumnName="RequestedBy" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+          <ScalarProperty Name="ScheduleUnitId" ColumnName="ScheduleUnitId" />
+          <ScalarProperty Name="ScheduleOn" ColumnName="ScheduleOn" />
+          <ScalarProperty Name="AttachmentList" ColumnName="AttachmentList" />
+          <ScalarProperty Name="TrialCount" ColumnName="TrialCount" />
+          <ScalarProperty Name="RepeatCount" ColumnName="RepeatCount" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="EmailRequest_Read_Weekly" FunctionName="EmailRequest.Store.PMPAxon_EmailRequest_Read_Weekly">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="EmailRequest.EmailRequestResult">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ToList" ColumnName="ToList" />
+          <ScalarProperty Name="EmailSubject" ColumnName="EmailSubject" />
+          <ScalarProperty Name="EmailBody" ColumnName="EmailBody" />
+          <ScalarProperty Name="EmailStatus" ColumnName="EmailStatus" />
+          <ScalarProperty Name="RequestedBy" ColumnName="RequestedBy" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+          <ScalarProperty Name="ScheduleUnitId" ColumnName="ScheduleUnitId" />
+          <ScalarProperty Name="ScheduleOn" ColumnName="ScheduleOn" />
+          <ScalarProperty Name="AttachmentList" ColumnName="AttachmentList" />
+          <ScalarProperty Name="TrialCount" ColumnName="TrialCount" />
+          <ScalarProperty Name="RepeatCount" ColumnName="RepeatCount" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="EmailRequest_Read_Yearly" FunctionName="EmailRequest.Store.PMPAxon_EmailRequest_Read_Yearly">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="EmailRequest.EmailRequestResult">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ToList" ColumnName="ToList" />
+          <ScalarProperty Name="EmailSubject" ColumnName="EmailSubject" />
+          <ScalarProperty Name="EmailBody" ColumnName="EmailBody" />
+          <ScalarProperty Name="EmailStatus" ColumnName="EmailStatus" />
+          <ScalarProperty Name="RequestedBy" ColumnName="RequestedBy" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+          <ScalarProperty Name="ScheduleUnitId" ColumnName="ScheduleUnitId" />
+          <ScalarProperty Name="ScheduleOn" ColumnName="ScheduleOn" />
+          <ScalarProperty Name="AttachmentList" ColumnName="AttachmentList" />
+          <ScalarProperty Name="TrialCount" ColumnName="TrialCount" />
+          <ScalarProperty Name="RepeatCount" ColumnName="RepeatCount" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,19 @@
+Guid:80d2d5d8-61e5-4a14-b5c6-770be235ffe6
+ToList:vipul@prakashinfotech.com
+Subject:[Test]: Email Scheduler 1
+Body:
+
+------------------------------------------------------------------------
+Guid:80d2d5d8-61e5-4a14-b5c6-770be235ffe6
+ToList:vipul@prakashinfotech.com
+Subject:[Test]: Email Scheduler 1
+Body:
+
+------------------------------------------------------------------------
+Guid:cdba2df1-067b-4a37-a081-ace2dabfbbd9
+ToList:vipul@prakashinfotech.com
+Subject:[Test]: Email Scheduler 2
+Body:
+AttachmentList:C:\EmailTest.csv
+
+------------------------------------------------------------------------

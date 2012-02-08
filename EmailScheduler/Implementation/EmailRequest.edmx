@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="EmailRequest.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="EmailRequestStoreContainer" />
+        <Function Name="PMPAxon_EmailRequest_Error" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Id" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="Message" Type="ntext" Mode="In" />
+        </Function>
+        <Function Name="PMPAxon_EmailRequest_Read_Daily" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="PMPAxon_EmailRequest_Read_Date" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="PMPAxon_EmailRequest_Read_Hourly" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="PMPAxon_EmailRequest_Read_Monthly" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="PMPAxon_EmailRequest_Read_Weekly" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="PMPAxon_EmailRequest_Read_Yearly" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="PMPAxon_EmailRequest_Success" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Id" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="ScheduleUnitId" Type="int" Mode="In" />
+        </Function>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="EmailRequest" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="EmailRequestEntities" annotation:LazyLoadingEnabled="true" >
+          <FunctionImport Name="EmailRequest_Error">
+            <Parameter Name="Id" Mode="In" Type="Guid" />
+            <Parameter Name="Message" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="EmailRequest_Success">
+            <Parameter Name="Id" Mode="In" Type="Guid" />
+            <Parameter Name="ScheduleUnitId" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="EmailRequest_Read_Daily" ReturnType="Collection(EmailRequest.EmailRequestResult)" />
+          <FunctionImport Name="EmailRequest_Read_Date" ReturnType="Collection(EmailRequest.EmailRequestResult)" />
+          <FunctionImport Name="EmailRequest_Read_Hourly" ReturnType="Collection(EmailRequest.EmailRequestResult)" />
+          <FunctionImport Name="EmailRequest_Read_Monthly" ReturnType="Collection(EmailRequest.EmailRequestResult)" />
+          <FunctionImport Name="EmailRequest_Read_Weekly" ReturnType="Collection(EmailRequest.EmailRequestResult)" />
+          <FunctionImport Name="EmailRequest_Read_Yearly" ReturnType="Collection(EmailRequest.EmailRequestResult)" />
+        </EntityContainer>
+        <ComplexType Name="EmailRequestResult">
+          <Property Type="Guid" Name="Id" Nullable="false" />
+          <Property Type="String" Name="ToList" Nullable="false" MaxLength="Max" />
+          <Property Type="String" Name="EmailSubject" Nullable="false" MaxLength="500" />
+          <Property Type="String" Name="EmailBody" Nullable="true" MaxLength="Max" />
+          <Property Type="Int32" Name="EmailStatus" Nullable="false" />
+          <Property Type="Guid" Name="RequestedBy" Nullable="true" />
+          <Property Type="DateTime" Name="CreateDate" Nullable="true" Precision="23" />
+          <Property Type="DateTime" Name="UpdateDate" Nullable="true" Precision="23" />
+          <Property Type="Int32" Name="ScheduleUnitId" Nullable="false" />
+          <Property Type="String" Name="ScheduleOn" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="AttachmentList" Nullable="true" MaxLength="Max" />
+          <Property Type="Int32" Name="TrialCount" Nullable="true" />
+          <Property Type="Int32" Name="RepeatCount" Nullable="true" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="EmailRequestStoreContainer" CdmEntityContainer="EmailRequestEntities" >
+          <FunctionImportMapping FunctionImportName="EmailRequest_Error" FunctionName="EmailRequest.Store.PMPAxon_EmailRequest_Error" />
+          <FunctionImportMapping FunctionImportName="EmailRequest_Success" FunctionName="EmailRequest.Store.PMPAxon_EmailRequest_Success" />
+          <FunctionImportMapping FunctionImportName="EmailRequest_Read_Daily" FunctionName="EmailRequest.Store.PMPAxon_EmailRequest_Read_Daily">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="EmailRequest.EmailRequestResult">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="ToList" ColumnName="ToList" />
+                <ScalarProperty Name="EmailSubject" ColumnName="EmailSubject" />
+                <ScalarProperty Name="EmailBody" ColumnName="EmailBody" />
+                <ScalarProperty Name="EmailStatus" ColumnName="EmailStatus" />
+                <ScalarProperty Name="RequestedBy" ColumnName="RequestedBy" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+                <ScalarProperty Name="ScheduleUnitId" ColumnName="ScheduleUnitId" />
+                <ScalarProperty Name="ScheduleOn" ColumnName="ScheduleOn" />
+                <ScalarProperty Name="AttachmentList" ColumnName="AttachmentList" />
+                <ScalarProperty Name="TrialCount" ColumnName="TrialCount" />
+                <ScalarProperty Name="RepeatCount" ColumnName="RepeatCount" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="EmailRequest_Read_Date" FunctionName="EmailRequest.Store.PMPAxon_EmailRequest_Read_Date">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="EmailRequest.EmailRequestResult">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="ToList" ColumnName="ToList" />
+                <ScalarProperty Name="EmailSubject" ColumnName="EmailSubject" />
+                <ScalarProperty Name="EmailBody" ColumnName="EmailBody" />
+                <ScalarProperty Name="EmailStatus" ColumnName="EmailStatus" />
+                <ScalarProperty Name="RequestedBy" ColumnName="RequestedBy" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+                <ScalarProperty Name="ScheduleUnitId" ColumnName="ScheduleUnitId" />
+                <ScalarProperty Name="ScheduleOn" ColumnName="ScheduleOn" />
+                <ScalarProperty Name="AttachmentList" ColumnName="AttachmentList" />
+                <ScalarProperty Name="TrialCount" ColumnName="TrialCount" />
+                <ScalarProperty Name="RepeatCount" ColumnName="RepeatCount" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="EmailRequest_Read_Hourly" FunctionName="EmailRequest.Store.PMPAxon_EmailRequest_Read_Hourly">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="EmailRequest.EmailRequestResult">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="ToList" ColumnName="ToList" />
+                <ScalarProperty Name="EmailSubject" ColumnName="EmailSubject" />
+                <ScalarProperty Name="EmailBody" ColumnName="EmailBody" />
+                <ScalarProperty Name="EmailStatus" ColumnName="EmailStatus" />
+                <ScalarProperty Name="RequestedBy" ColumnName="RequestedBy" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+                <ScalarProperty Name="ScheduleUnitId" ColumnName="ScheduleUnitId" />
+                <ScalarProperty Name="ScheduleOn" ColumnName="ScheduleOn" />
+                <ScalarProperty Name="AttachmentList" ColumnName="AttachmentList" />
+                <ScalarProperty Name="TrialCount" ColumnName="TrialCount" />
+                <ScalarProperty Name="RepeatCount" ColumnName="RepeatCount" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="EmailRequest_Read_Monthly" FunctionName="EmailRequest.Store.PMPAxon_EmailRequest_Read_Monthly">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="EmailRequest.EmailRequestResult">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="ToList" ColumnName="ToList" />
+                <ScalarProperty Name="EmailSubject" ColumnName="EmailSubject" />
+                <ScalarProperty Name="EmailBody" ColumnName="EmailBody" />
+                <ScalarProperty Name="EmailStatus" ColumnName="EmailStatus" />
+                <ScalarProperty Name="RequestedBy" ColumnName="RequestedBy" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+                <ScalarProperty Name="ScheduleUnitId" ColumnName="ScheduleUnitId" />
+                <ScalarProperty Name="ScheduleOn" ColumnName="ScheduleOn" />
+                <ScalarProperty Name="AttachmentList" ColumnName="AttachmentList" />
+                <ScalarProperty Name="TrialCount" ColumnName="TrialCount" />
+                <ScalarProperty Name="RepeatCount" ColumnName="RepeatCount" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="EmailRequest_Read_Weekly" FunctionName="EmailRequest.Store.PMPAxon_EmailRequest_Read_Weekly">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="EmailRequest.EmailRequestResult">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="ToList" ColumnName="ToList" />
+                <ScalarProperty Name="EmailSubject" ColumnName="EmailSubject" />
+                <ScalarProperty Name="EmailBody" ColumnName="EmailBody" />
+                <ScalarProperty Name="EmailStatus" ColumnName="EmailStatus" />
+                <ScalarProperty Name="RequestedBy" ColumnName="RequestedBy" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+                <ScalarProperty Name="ScheduleUnitId" ColumnName="ScheduleUnitId" />
+                <ScalarProperty Name="ScheduleOn" ColumnName="ScheduleOn" />
+                <ScalarProperty Name="AttachmentList" ColumnName="AttachmentList" />
+                <ScalarProperty Name="TrialCount" ColumnName="TrialCount" />
+                <ScalarProperty Name="RepeatCount" ColumnName="RepeatCount" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="EmailRequest_Read_Yearly" FunctionName="EmailRequest.Store.PMPAxon_EmailRequest_Read_Yearly">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="EmailRequest.EmailRequestResult">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="ToList" ColumnName="ToList" />
+                <ScalarProperty Name="EmailSubject" ColumnName="EmailSubject" />
+                <ScalarProperty Name="EmailBody" ColumnName="EmailBody" />
+                <ScalarProperty Name="EmailStatus" ColumnName="EmailStatus" />
+                <ScalarProperty Name="RequestedBy" ColumnName="RequestedBy" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+                <ScalarProperty Name="ScheduleUnitId" ColumnName="ScheduleUnitId" />
+                <ScalarProperty Name="ScheduleOn" ColumnName="ScheduleOn" />
+                <ScalarProperty Name="AttachmentList" ColumnName="AttachmentList" />
+                <ScalarProperty Name="TrialCount" ColumnName="TrialCount" />
+                <ScalarProperty Name="RepeatCount" ColumnName="RepeatCount" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="EmailRequest" />
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

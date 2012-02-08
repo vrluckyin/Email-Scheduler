@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="2ddb8ccb-71c4-4102-a67e-91415b7e747e" name="vipul@PSSPL31 2011-11-07 17:36:31" runUser="SERVER\vipul" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="3264397e-90e9-4a18-9056-23e80fc89126">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="vipul_PSSPL31 2011-11-07 17_36_31">
+      <DeploymentItem filename="D:\Vipul\Project R&amp;D\EmailScheduler\EmailScheduler.Service.Api\bin\Debug\EmailScheduler.Service.Api.dll" />
+      <DeploymentItem filename="D:\Vipul\Project R&amp;D\EmailScheduler\EmailScheduler.Object.Implementation\bin\Debug\EmailScheduler.Object.Implementation.dll" />
+      <DeploymentItem filename="D:\Vipul\Project R&amp;D\EmailScheduler\EmailScheduler.Client.Contracts\bin\Debug\EmailScheduler.Client.Contracts.dll" />
+      <DeploymentItem filename="D:\Vipul\Project R&amp;D\EmailScheduler\EmailScheduler.Client.Api\bin\Debug\EmailScheduler.Client.Api.dll" />
+      <DeploymentItem filename="D:\Vipul\Project R&amp;D\EmailScheduler\EmailScheduler.Object.Contracts\bin\Debug\EmailScheduler.Object.Contracts.dll" />
+      <DeploymentItem filename="D:\Vipul\Project R&amp;D\EmailScheduler\EmailScheduler.Common\bin\Debug\EmailScheduler.Common.dll" />
+      <DeploymentItem filename="D:\Vipul\Project R&amp;D\EmailScheduler\EmailScheduler.Service.Contracts\bin\Debug\EmailScheduler.Service.Contracts.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2011-11-07T17:36:31.3873229+05:30" queuing="2011-11-07T17:36:37.4479278+05:30" start="2011-11-07T17:36:38.0667752+05:30" finish="2011-11-07T17:36:51.9537499+05:30" />
+  <ResultSummary outcome="Error">
+    <Counters total="8" executed="1" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="7" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="PSSPL31" outcome="Error" timestamp="2011-11-07T17:36:51.9488694+05:30">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="CreateYearlyTest" storage="d:\vipul\project r&amp;d\emailscheduler\emailscheduler.test\bin\debug\emailscheduler.test.dll" id="47e5dd4d-c252-20ce-4914-8eb83f28ccf3">
+      <Execution id="4ad26aa2-bc11-4310-8ab6-336d5f5ad645" />
+      <TestMethod codeBase="D:/Vipul/Project R&amp;D/EmailScheduler/EmailScheduler.Test/bin/Debug/EmailScheduler.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="EmailScheduler.Test.EmailRequestTest, EmailScheduler.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreateYearlyTest" />
+    </UnitTest>
+    <UnitTest name="CreateHourlyTest" storage="d:\vipul\project r&amp;d\emailscheduler\emailscheduler.test\bin\debug\emailscheduler.test.dll" id="df345bbd-1c92-c655-cd3d-cf2059a65455">
+      <Execution id="9a9d73b8-927f-41c9-92f0-1b9de507d553" />
+      <TestMethod codeBase="D:/Vipul/Project R&amp;D/EmailScheduler/EmailScheduler.Test/bin/Debug/EmailScheduler.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="EmailScheduler.Test.EmailRequestTest, EmailScheduler.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreateHourlyTest" />
+    </UnitTest>
+    <UnitTest name="CreateWeeklyTest" storage="d:\vipul\project r&amp;d\emailscheduler\emailscheduler.test\bin\debug\emailscheduler.test.dll" id="1e17ec88-4a98-b186-b69b-e28a50664c31">
+      <Execution id="a3babfc8-8fc3-4aa4-bbe9-48bd621e4ac2" />
+      <TestMethod codeBase="D:/Vipul/Project R&amp;D/EmailScheduler/EmailScheduler.Test/bin/Debug/EmailScheduler.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="EmailScheduler.Test.EmailRequestTest, EmailScheduler.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreateWeeklyTest" />
+    </UnitTest>
+    <UnitTest name="CreateDailyTest" storage="d:\vipul\project r&amp;d\emailscheduler\emailscheduler.test\bin\debug\emailscheduler.test.dll" id="5b9ddc0f-3de6-4bdf-a771-6b6576d3a5ef">
+      <Execution id="874a71b4-9bf5-44b7-a3a5-9678747324e1" />
+      <TestMethod codeBase="D:/Vipul/Project R&amp;D/EmailScheduler/EmailScheduler.Test/bin/Debug/EmailScheduler.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="EmailScheduler.Test.EmailRequestTest, EmailScheduler.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreateDailyTest" />
+    </UnitTest>
+    <UnitTest name="CompleteTest" storage="d:\vipul\project r&amp;d\emailscheduler\emailscheduler.test\bin\debug\emailscheduler.test.dll" id="ff805eac-b0af-96d1-2047-12e3fb8c3582">
+      <Execution id="0ef2b8dc-dcde-46aa-96ab-71b0a50161d2" />
+      <TestMethod codeBase="D:/Vipul/Project R&amp;D/EmailScheduler/EmailScheduler.Test/bin/Debug/EmailScheduler.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="EmailScheduler.Test.EmailRequestTest, EmailScheduler.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CompleteTest" />
+    </UnitTest>
+    <UnitTest name="CreateMonthlyTest" storage="d:\vipul\project r&amp;d\emailscheduler\emailscheduler.test\bin\debug\emailscheduler.test.dll" id="49443ad0-467f-dee7-fd39-3256cb269873">
+      <Execution id="869af386-4446-44b5-855b-53046ae133d7" />
+      <TestMethod codeBase="D:/Vipul/Project R&amp;D/EmailScheduler/EmailScheduler.Test/bin/Debug/EmailScheduler.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="EmailScheduler.Test.EmailRequestTest, EmailScheduler.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreateMonthlyTest" />
+    </UnitTest>
+    <UnitTest name="CreateDateTest" storage="d:\vipul\project r&amp;d\emailscheduler\emailscheduler.test\bin\debug\emailscheduler.test.dll" id="5d18f1dd-1d44-e39e-35ff-cda495703877">
+      <Execution id="53dea345-fdc9-409f-b2b9-3a0ccdd6d44d" />
+      <TestMethod codeBase="D:/Vipul/Project R&amp;D/EmailScheduler/EmailScheduler.Test/bin/Debug/EmailScheduler.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="EmailScheduler.Test.EmailRequestTest, EmailScheduler.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreateDateTest" />
+    </UnitTest>
+    <UnitTest name="CreateQuarterlyTest" storage="d:\vipul\project r&amp;d\emailscheduler\emailscheduler.test\bin\debug\emailscheduler.test.dll" id="e1199f36-9823-576c-1476-e7852740d108">
+      <Execution id="674fb8fb-1cd7-45b0-9016-1654683b25c4" />
+      <TestMethod codeBase="D:/Vipul/Project R&amp;D/EmailScheduler/EmailScheduler.Test/bin/Debug/EmailScheduler.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="EmailScheduler.Test.EmailRequestTest, EmailScheduler.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreateQuarterlyTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="1e17ec88-4a98-b186-b69b-e28a50664c31" executionId="a3babfc8-8fc3-4aa4-bbe9-48bd621e4ac2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="47e5dd4d-c252-20ce-4914-8eb83f28ccf3" executionId="4ad26aa2-bc11-4310-8ab6-336d5f5ad645" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="49443ad0-467f-dee7-fd39-3256cb269873" executionId="869af386-4446-44b5-855b-53046ae133d7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5b9ddc0f-3de6-4bdf-a771-6b6576d3a5ef" executionId="874a71b4-9bf5-44b7-a3a5-9678747324e1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5d18f1dd-1d44-e39e-35ff-cda495703877" executionId="53dea345-fdc9-409f-b2b9-3a0ccdd6d44d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="df345bbd-1c92-c655-cd3d-cf2059a65455" executionId="9a9d73b8-927f-41c9-92f0-1b9de507d553" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e1199f36-9823-576c-1476-e7852740d108" executionId="674fb8fb-1cd7-45b0-9016-1654683b25c4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ff805eac-b0af-96d1-2047-12e3fb8c3582" executionId="0ef2b8dc-dcde-46aa-96ab-71b0a50161d2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="a3babfc8-8fc3-4aa4-bbe9-48bd621e4ac2" testId="1e17ec88-4a98-b186-b69b-e28a50664c31" testName="CreateWeeklyTest" computerName="PSSPL31" duration="00:00:13.5736466" startTime="2011-11-07T17:36:38.3781511+05:30" endTime="2011-11-07T17:36:51.9517977+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a3babfc8-8fc3-4aa4-bbe9-48bd621e4ac2">
+    </UnitTestResult>
+    <UnitTestResult executionId="4ad26aa2-bc11-4310-8ab6-336d5f5ad645" testId="47e5dd4d-c252-20ce-4914-8eb83f28ccf3" testName="CreateYearlyTest" computerName="PSSPL31" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4ad26aa2-bc11-4310-8ab6-336d5f5ad645">
+    </UnitTestResult>
+    <UnitTestResult executionId="869af386-4446-44b5-855b-53046ae133d7" testId="49443ad0-467f-dee7-fd39-3256cb269873" testName="CreateMonthlyTest" computerName="PSSPL31" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="869af386-4446-44b5-855b-53046ae133d7">
+    </UnitTestResult>
+    <UnitTestResult executionId="874a71b4-9bf5-44b7-a3a5-9678747324e1" testId="5b9ddc0f-3de6-4bdf-a771-6b6576d3a5ef" testName="CreateDailyTest" computerName="PSSPL31" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="874a71b4-9bf5-44b7-a3a5-9678747324e1">
+    </UnitTestResult>
+    <UnitTestResult executionId="53dea345-fdc9-409f-b2b9-3a0ccdd6d44d" testId="5d18f1dd-1d44-e39e-35ff-cda495703877" testName="CreateDateTest" computerName="PSSPL31" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="53dea345-fdc9-409f-b2b9-3a0ccdd6d44d">
+    </UnitTestResult>
+    <UnitTestResult executionId="9a9d73b8-927f-41c9-92f0-1b9de507d553" testId="df345bbd-1c92-c655-cd3d-cf2059a65455" testName="CreateHourlyTest" computerName="PSSPL31" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9a9d73b8-927f-41c9-92f0-1b9de507d553">
+    </UnitTestResult>
+    <UnitTestResult executionId="674fb8fb-1cd7-45b0-9016-1654683b25c4" testId="e1199f36-9823-576c-1476-e7852740d108" testName="CreateQuarterlyTest" computerName="PSSPL31" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="674fb8fb-1cd7-45b0-9016-1654683b25c4">
+    </UnitTestResult>
+    <UnitTestResult executionId="0ef2b8dc-dcde-46aa-96ab-71b0a50161d2" testId="ff805eac-b0af-96d1-2047-12e3fb8c3582" testName="CompleteTest" computerName="PSSPL31" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0ef2b8dc-dcde-46aa-96ab-71b0a50161d2">
+    </UnitTestResult>
+  </Results>
+</TestRun>

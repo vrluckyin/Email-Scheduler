@@ -1,0 +1,15 @@
+D:\Vipul\Project R&D\EmailScheduler\EmailScheduler.MemoryRepository\obj\Debug\ResolveAssemblyReference.cache
+D:\Vipul\Project R&D\EmailScheduler\EmailScheduler.MemoryRepository\bin\Debug\EmailScheduler.MemoryRepository.dll
+D:\Vipul\Project R&D\EmailScheduler\EmailScheduler.MemoryRepository\bin\Debug\EmailScheduler.MemoryRepository.pdb
+D:\Vipul\Project R&D\EmailScheduler\EmailScheduler.MemoryRepository\bin\Debug\EmailScheduler.Client.Contracts.dll
+D:\Vipul\Project R&D\EmailScheduler\EmailScheduler.MemoryRepository\bin\Debug\EmailScheduler.Common.dll
+D:\Vipul\Project R&D\EmailScheduler\EmailScheduler.MemoryRepository\bin\Debug\EmailScheduler.Object.Contracts.dll
+D:\Vipul\Project R&D\EmailScheduler\EmailScheduler.MemoryRepository\bin\Debug\EmailScheduler.Service.Contracts.dll
+D:\Vipul\Project R&D\EmailScheduler\EmailScheduler.MemoryRepository\bin\Debug\EmailScheduler.Client.Contracts.pdb
+D:\Vipul\Project R&D\EmailScheduler\EmailScheduler.MemoryRepository\bin\Debug\EmailScheduler.Common.pdb
+D:\Vipul\Project R&D\EmailScheduler\EmailScheduler.MemoryRepository\bin\Debug\EmailScheduler.Object.Contracts.pdb
+D:\Vipul\Project R&D\EmailScheduler\EmailScheduler.MemoryRepository\bin\Debug\EmailScheduler.Service.Contracts.pdb
+D:\Vipul\Project R&D\EmailScheduler\EmailScheduler.MemoryRepository\obj\Debug\EmailScheduler.MemoryRepository.dll
+D:\Vipul\Project R&D\EmailScheduler\EmailScheduler.MemoryRepository\obj\Debug\EmailScheduler.MemoryRepository.pdb
+D:\Vipul\Project R&D\EmailScheduler\EmailScheduler.MemoryRepository\bin\Debug\EmailScheduler.Object.Implementation.dll
+D:\Vipul\Project R&D\EmailScheduler\EmailScheduler.MemoryRepository\bin\Debug\EmailScheduler.Object.Implementation.pdb

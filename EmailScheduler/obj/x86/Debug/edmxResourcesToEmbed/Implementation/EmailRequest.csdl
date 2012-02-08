@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EmailRequest" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="EmailRequestEntities" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="EmailRequest_Error">
+      <Parameter Name="Id" Mode="In" Type="Guid" />
+      <Parameter Name="Message" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="EmailRequest_Success">
+      <Parameter Name="Id" Mode="In" Type="Guid" />
+      <Parameter Name="ScheduleUnitId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="EmailRequest_Read_Daily" ReturnType="Collection(EmailRequest.EmailRequestResult)" />
+    <FunctionImport Name="EmailRequest_Read_Date" ReturnType="Collection(EmailRequest.EmailRequestResult)" />
+    <FunctionImport Name="EmailRequest_Read_Hourly" ReturnType="Collection(EmailRequest.EmailRequestResult)" />
+    <FunctionImport Name="EmailRequest_Read_Monthly" ReturnType="Collection(EmailRequest.EmailRequestResult)" />
+    <FunctionImport Name="EmailRequest_Read_Weekly" ReturnType="Collection(EmailRequest.EmailRequestResult)" />
+    <FunctionImport Name="EmailRequest_Read_Yearly" ReturnType="Collection(EmailRequest.EmailRequestResult)" />
+  </EntityContainer>
+  <ComplexType Name="EmailRequestResult">
+    <Property Type="Guid" Name="Id" Nullable="false" />
+    <Property Type="String" Name="ToList" Nullable="false" MaxLength="Max" />
+    <Property Type="String" Name="EmailSubject" Nullable="false" MaxLength="500" />
+    <Property Type="String" Name="EmailBody" Nullable="true" MaxLength="Max" />
+    <Property Type="Int32" Name="EmailStatus" Nullable="false" />
+    <Property Type="Guid" Name="RequestedBy" Nullable="true" />
+    <Property Type="DateTime" Name="CreateDate" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="UpdateDate" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="ScheduleUnitId" Nullable="false" />
+    <Property Type="String" Name="ScheduleOn" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="AttachmentList" Nullable="true" MaxLength="Max" />
+    <Property Type="Int32" Name="TrialCount" Nullable="true" />
+    <Property Type="Int32" Name="RepeatCount" Nullable="true" />
+  </ComplexType>
+</Schema>

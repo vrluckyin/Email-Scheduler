@@ -1,0 +1,26 @@
+D:\Vipul\Projects\PMPAxon\EmailScheduler\EmailScheduler\EmailScheduler.Client.Api\bin\Debug\EmailScheduler.Client.Api.dll
+D:\Vipul\Projects\PMPAxon\EmailScheduler\EmailScheduler\EmailScheduler.Client.Api\bin\Debug\EmailScheduler.Client.Api.pdb
+D:\Vipul\Projects\PMPAxon\EmailScheduler\EmailScheduler\EmailScheduler.Client.Api\obj\Debug\ResolveAssemblyReference.cache
+D:\Vipul\Projects\PMPAxon\EmailScheduler\EmailScheduler\EmailScheduler.Client.Api\obj\Debug\EmailScheduler.Client.Api.dll
+D:\Vipul\Projects\PMPAxon\EmailScheduler\EmailScheduler\EmailScheduler.Client.Api\obj\Debug\EmailScheduler.Client.Api.pdb
+D:\Vipul\Projects\PMPAxon\EmailScheduler\EmailScheduler\EmailScheduler.Client.Api\bin\Debug\EmailScheduler.Client.Contracts.dll
+D:\Vipul\Projects\PMPAxon\EmailScheduler\EmailScheduler\EmailScheduler.Client.Api\bin\Debug\EmailScheduler.Common.dll
+D:\Vipul\Projects\PMPAxon\EmailScheduler\EmailScheduler\EmailScheduler.Client.Api\bin\Debug\EmailScheduler.Client.Contracts.pdb
+D:\Vipul\Projects\PMPAxon\EmailScheduler\EmailScheduler\EmailScheduler.Client.Api\bin\Debug\EmailScheduler.Common.pdb
+D:\Vipul\Projects\PMPAxon\EmailScheduler\EmailScheduler\EmailScheduler.Client.Api\bin\Debug\EmailScheduler.Object.Contracts.dll
+D:\Vipul\Projects\PMPAxon\EmailScheduler\EmailScheduler\EmailScheduler.Client.Api\bin\Debug\EmailScheduler.Object.Implementation.dll
+D:\Vipul\Projects\PMPAxon\EmailScheduler\EmailScheduler\EmailScheduler.Client.Api\bin\Debug\EmailScheduler.Object.Contracts.pdb
+D:\Vipul\Projects\PMPAxon\EmailScheduler\EmailScheduler\EmailScheduler.Client.Api\bin\Debug\EmailScheduler.Object.Implementation.pdb
+D:\Vipul\Project R&D\EmailScheduler\EmailScheduler.Client.Api\bin\Debug\EmailScheduler.Client.Api.dll
+D:\Vipul\Project R&D\EmailScheduler\EmailScheduler.Client.Api\bin\Debug\EmailScheduler.Client.Api.pdb
+D:\Vipul\Project R&D\EmailScheduler\EmailScheduler.Client.Api\bin\Debug\EmailScheduler.Client.Contracts.dll
+D:\Vipul\Project R&D\EmailScheduler\EmailScheduler.Client.Api\bin\Debug\EmailScheduler.Common.dll
+D:\Vipul\Project R&D\EmailScheduler\EmailScheduler.Client.Api\bin\Debug\EmailScheduler.Object.Contracts.dll
+D:\Vipul\Project R&D\EmailScheduler\EmailScheduler.Client.Api\bin\Debug\EmailScheduler.Object.Implementation.dll
+D:\Vipul\Project R&D\EmailScheduler\EmailScheduler.Client.Api\bin\Debug\EmailScheduler.Client.Contracts.pdb
+D:\Vipul\Project R&D\EmailScheduler\EmailScheduler.Client.Api\bin\Debug\EmailScheduler.Common.pdb
+D:\Vipul\Project R&D\EmailScheduler\EmailScheduler.Client.Api\bin\Debug\EmailScheduler.Object.Contracts.pdb
+D:\Vipul\Project R&D\EmailScheduler\EmailScheduler.Client.Api\bin\Debug\EmailScheduler.Object.Implementation.pdb
+D:\Vipul\Project R&D\EmailScheduler\EmailScheduler.Client.Api\obj\Debug\ResolveAssemblyReference.cache
+D:\Vipul\Project R&D\EmailScheduler\EmailScheduler.Client.Api\obj\Debug\EmailScheduler.Client.Api.dll
+D:\Vipul\Project R&D\EmailScheduler\EmailScheduler.Client.Api\obj\Debug\EmailScheduler.Client.Api.pdb

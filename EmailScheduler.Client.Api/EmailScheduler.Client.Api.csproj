@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{55FC70EF-E817-48B1-8AF3-BCBE35F64A7B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EmailScheduler.Client.Api</RootNamespace>
+    <AssemblyName>EmailScheduler.Client.Api</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EmailSchedulerClient.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EmailScheduler.Client.Contracts\EmailScheduler.Client.Contracts.csproj">
+      <Project>{65ABBFB5-7EDE-4C06-83C2-C3B91CC4B3EC}</Project>
+      <Name>EmailScheduler.Client.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EmailScheduler.Common\EmailScheduler.Common.csproj">
+      <Project>{5093FEE5-4167-4402-BDA8-41BCA0A11608}</Project>
+      <Name>EmailScheduler.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EmailScheduler.Object.Contracts\EmailScheduler.Object.Contracts.csproj">
+      <Project>{7145174A-44F6-4C7D-A551-30D4C7A875DC}</Project>
+      <Name>EmailScheduler.Object.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EmailScheduler.Object.Implementation\EmailScheduler.Object.Implementation.csproj">
+      <Project>{E55F02D5-1EE6-4A4F-BA57-4AD7D58FA5FE}</Project>
+      <Name>EmailScheduler.Object.Implementation</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

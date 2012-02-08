@@ -1,0 +1,12 @@
+D:\Vipul\Projects\PMPAxon\EmailScheduler\EmailScheduler\EmailScheduler\bin\Debug\PMPAxon.EmailScheduler.exe.config
+D:\Vipul\Projects\PMPAxon\EmailScheduler\EmailScheduler\EmailScheduler\bin\Debug\PMPAxon.EmailScheduler.exe
+D:\Vipul\Projects\PMPAxon\EmailScheduler\EmailScheduler\EmailScheduler\bin\Debug\PMPAxon.EmailScheduler.pdb
+D:\Vipul\Projects\PMPAxon\EmailScheduler\EmailScheduler\EmailScheduler\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Vipul\Projects\PMPAxon\EmailScheduler\EmailScheduler\EmailScheduler\obj\x86\Debug\EmailScheduler.ProjectInstaller.resources
+D:\Vipul\Projects\PMPAxon\EmailScheduler\EmailScheduler\EmailScheduler\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Vipul\Projects\PMPAxon\EmailScheduler\EmailScheduler\EmailScheduler\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Vipul\Projects\PMPAxon\EmailScheduler\EmailScheduler\EmailScheduler\obj\x86\Debug\PMPAxon.EmailScheduler.exe
+D:\Vipul\Projects\PMPAxon\EmailScheduler\EmailScheduler\EmailScheduler\obj\x86\Debug\PMPAxon.EmailScheduler.pdb
+D:\Vipul\Project R&D\EmailScheduler\EmailScheduler\bin\Debug\PMPAxon.EmailScheduler.exe.config
+D:\Vipul\Project R&D\EmailScheduler\EmailScheduler\obj\x86\Debug\PMPAxon.EmailScheduler.exe
+D:\Vipul\Project R&D\EmailScheduler\EmailScheduler\obj\x86\Debug\PMPAxon.EmailScheduler.pdb
